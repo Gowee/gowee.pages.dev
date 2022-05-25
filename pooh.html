@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooh jump</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        const query = window.location.search
+        if (query) {
+            window.location = "dtxuexi://appclient/page/study_feeds?url=" + query.substring(1)
+        }
+        else {
+            alert("No param")
+            window.close()
+            history.back()
+        }
+    </script>
+</body>
+
+</html>
